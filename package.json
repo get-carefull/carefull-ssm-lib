@@ -1,0 +1,9 @@
+{
+    "name": "@carefull/aws-ssm-lib",
+    "description": "aws ssm lib",
+    "version": "0.0.1",
+    "main": "ssm.js",
+    "dependencies": {
+        "@aws-sdk/client-ssm": "^3.44.0"
+    }
+}
