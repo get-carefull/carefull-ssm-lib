@@ -1,5 +1,5 @@
 const {SSMClient, GetParametersByPathCommand, GetParameterCommand} = require("@aws-sdk/client-ssm");
-const client = new SSMClient();
+const client = new SSMClient({region: process.env.AWS_REGION ?? "us-east-1"});
 
 const getParametersByPath = async (path) => {
     const params = {
