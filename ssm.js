@@ -41,7 +41,7 @@ const pathToDict = ({prev, value, path}) => {
     return prev
 }
 
-exports.getSsmParameters = async ({paths, items}) => {
+exports.getSsmParameters = async ({paths = [], items = []}) => {
     let parameters = {}
     for (const path of paths) {
         const params = await getParametersByPath(path);
